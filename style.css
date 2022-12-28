@@ -1,0 +1,170 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    background-image: url(img/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+header h1{
+    color: #fff;
+    max-width: 770px;
+    font-weight: 600;
+    font-size: 2.1rem;
+    margin: 0 auto;
+    padding: 44px 10px;
+    text-align: center;
+}
+
+/*skills*/
+
+.skills{
+    padding: 55px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+.skills div{
+    width: 100%;
+    max-width: 300px;
+    text-align: center; 
+    height: auto;
+    /* overflow: hidden; */
+}
+
+.skills img{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 6px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.skills h3{
+    width: 100%;
+    font-size: 1.625rem;
+    font-weight: 500;
+    margin: 27px 0 30px 0;
+    min-height: 20px;
+}
+
+.skills p{
+    width: 100%;
+    line-height: 150%;
+    font-size: 1rem;
+}
+
+/*quality*/
+
+.quality{
+    background-image: url(img/quality_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.quality p{
+    font-size: 2.25rem;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    margin: 0;
+}
+
+/*contacts*/
+
+.contacts p{
+    max-width: 1120px;
+    padding: 40px 10px 40px 10px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+
+.contacts a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 240px;
+    margin: 66px auto 58px auto;
+}
+
+.contacts a span{
+    position: absolute;
+    background-image: url(img/icons/icons.svg);
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cont_left{
+    left: -40px;
+    top: 9px;
+    background-position: 0 -110px;
+}
+
+.cont_right{
+    right: -45px;
+    top: 6px;
+    background-position: 0 0;
+}
+
+footer{
+    background-color: #1B1818;
+}
+
+footer p{
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 26px 0 36px 0;
+}
+
+@media all and (min-width:360px){
+    .skills{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (min-width:540px){
+    .skills{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    h1{
+        font-size: 3rem;
+    }
+}
+
+@media all and (min-width:1135px){
+    .skills{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .skills p{
+        font-size: 1.25rem;
+    }
+}
